@@ -17,7 +17,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* Agregamos el basename para que funcione en la subcarpeta de GitHub */}
+      <BrowserRouter basename="/tallermecanicoRamirez">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/historia" element={<Historia />} />
